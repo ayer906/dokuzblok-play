@@ -42,8 +42,11 @@ body.desktop #game {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  background: radial-gradient(circle at 50% 35%, #1D246B 0%, #0B123F 75%);
+  gap: 28px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.06) 2px, transparent 2px) 0 0 / 56px 56px,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 2px, transparent 2px) 0 0 / 56px 56px,
+    radial-gradient(circle at 50% 35%, #232C7A 0%, #0B123F 75%);
   transition: opacity 0.4s ease;
 }
 
@@ -51,11 +54,14 @@ body.desktop #game {
   opacity: 0;
 }
 
-#loading-logo {
-  width: min(56%, 300px);
-  border-radius: 22%;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+#loading-mark {
+  width: min(42%, 220px);
+  margin-bottom: -40px;
   animation: bob 1.6s ease-in-out infinite;
+}
+
+#loading-wordmark {
+  width: min(78%, 420px);
 }
 
 @keyframes bob {
@@ -64,7 +70,7 @@ body.desktop #game {
 }
 
 #progress {
-  width: min(56%, 300px);
+  width: min(60%, 320px);
   height: 14px;
   border-radius: 7px;
   background: rgba(255, 255, 255, 0.15);
