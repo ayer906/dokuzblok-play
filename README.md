@@ -1,4 +1,4 @@
-# Dokuz Blok (beta)
+# Blocko (beta)
 
 9x9 blok bulmaca oyununun tarayıcıda oynanabilir beta sürümü.
 
